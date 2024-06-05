@@ -9,7 +9,8 @@ import VueRouter from 'unplugin-vue-router/vite';
 export default defineConfig({
     plugins: [
         VueRouter({
-            /* options */
+            extensions: ['.page.vue'],
+            importMode: 'async'
         }),
         vue(),
         VueDevTools()
